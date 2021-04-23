@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Find College</title>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="enggcollege.css" rel="stylesheet" type="text/css" />
+	<!-- <link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/jcarousel.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet"> -->
+	<!-- <link href="css/style.css" rel="stylesheet" /> -->
+
+<style>
+ 
+</style>
+
+
+
+  </head>
+  <body style="background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);">
+    <header class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border border-b-2 border-gray-400">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <span class="ml-3 text-xl">EUPHEUS</span>
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <a href="Home.html" class="mr-5 hover:text-gray-900">HOME</a>
+          <a href="courses.html" class="mr-5 hover:text-gray-900">Courses</a>
+          <a href="colleges.html" class="mr-5 hover:text-gray-900">Colleges</a>
+          <a href="https://www.ncs.gov.in/Pages/default.aspx" class="mr-5 hover:text-gray-900">Job Portal</a>
+          <a href="additionalinfo.html" class="mr-5 hover:text-gray-900">Additional Information</a>
+          <a href="scholarship.html" class="mr-5 hover:text-gray-900">Scholarships</a>
+          <a href="abroadstudies.html" class="mr-5 hover:text-gray-900">Overseas</a>
+          <a href="queries.html" class="mr-5 hover:text-gray-900">Queries</a>
+        </nav>
+      </div>
+    </header>
+  <div class="container">
+    <div class="ml-5">
+      <br><br><br>
+      <h4 class="uppercase font-bold">Enter your marks for Cutoff</h4><br><br>
+      <input id="mark1" placeholder="Maths" type="number"><br><br>
+      <input id="mark2" placeholder="Physics" type="number"><br><br>
+      <input id="mark3" placeholder="Chemistry" type="number"><br><br>
+      <button onclick="calccutoff()" class="bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700  text-white py-1 px-2 rounded bg-yellow-500 font-size;14px ">
+    Calculate
+    </button>
+    </div><br><br>
+<div class="w-full max-w-sm ">
+    <div class="flex items-center border-b border-teal-500 py-2 mb-10">
+    <input id="mark" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="number" placeholder="Your Cutoff" disabled>
+    <button onclick="time()" class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500   hover:border-teal-700 font-size:14px text-white py-1 px-2 rounded bg-blue-500">
+    Submit
+    </button><br>
+    
+  </div>
+
+  </div>
+  <h1 class="text-4xl font-bold ">THE COLLEGES IN COIMBATORE FOR YOUR CUT-OFF</h1><br>
+    <!-- <div class="inline-block relative w-64 ml-3 mt-5">
+      <input type="number" id="mark">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded  mt-5" onclick="time()">Submit</button>
+    </div> -->
+    <div class="loader"></div>
+    <div id="dummy">
+    </div>
+    <div id="gct" >
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600 uppercase"><a href="https://gct.ac.in/">government college of technology</a></h1>
+     
+      <h4>code: 2005</h4>
+    </div>
+    <div id="psg" >
+      <a href="https://www.psgtech.edu/"> <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase">psg college of technology</a></h1>
+      <h4>code: 2006</h4>
+    </div>
+    <div id="cit" >
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"> <a href="https://www.cit.edu.in/">coimbatore institute of technology</a></h1>
+      <h4>code: 2007</h4>
+    </div>
+    <div id="rtc">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" >
+        <a href="https://www.rathinamtechnicalcampus.com/">Rathinam Technical Campus</a></h1>
+      <h4>code: 2329</h4>
+    </div>
+    <div id="acet">
+     <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" > <a href="http://acetcbe.in/"> asian college of engineering and technology</a></h1>
+      <h4>code: 2338</h4>
+    </div>
+    <div id="dit">
+       <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="https://dhaanish.in/">Dhaanish Ahmed Institute of Technology</a></h1>
+      <h4>code: 2349</h4>
+    </div>
+    <div id="ctk">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="https://www.ckec.ac.in/">christ the king engineering college</a></h1>
+      <h4>code: 2650</h4>
+    </div>
+    <div id="hin">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="http://hindusthan.net/hicet/">Hindusthan College of Engineering and Technology</a></h1>
+      <h4>code: 2708</h4>
+    </div>
+    <div id="kce">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="https://kce.ac.in/">karpagam college of engineering</a></h1>
+      <h4 >code: 2710</h4>
+    </div>
+    <div id="kct">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="https://www.kct.ac.in/">kumaraguru college of technology</a></h1>
+      <h4 >code: 2712</h4>
+    </div>
+    <div id="skcet" >
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="http://www.skcet.ac.in/">sri krishna college of engineering and technology</a></h1>
+      <h4>code: 2718</h4>
+    </div>
+    <div id="srec">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="https://www.srec.ac.in/">sri ramakrishna engineering college</a></h1>
+      <h4 >code: 2719</h4>
+    </div>
+    <div id="tce">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="https://www.tnce.in/">Tamilnadu College of Engineering</a></h1>
+      <h4>code: 2721</h4>
+    </div>
+    <div id="skct">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="http://www.skct.edu.in/">sri krishna College of technology</a></h1>
+      <h4>code: 2722</h4>
+    </div>
+    <div id="sakthi">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="https://www.siet.ac.in/">Sri Shakthi Institute of Engineering and Technology</a></h1>
+      <h4>code: 2727</h4>
+    </div>
+  <div id="maharaja">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="http://www.maharaja.in/MIT/">Maharaja Institute of Technology</a></h1>
+      <h4>code: 2730</h4>
+    </div>
+    <div id="ngp">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="https://www.drngpit.ac.in/">dr. n.g.p. institute of technology</a></h1>
+      <h4 >code: 2736</h4>
+    </div>
+    <div id="rec">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="http://reccbe.ac.in/">Ranganathan Engineering College</a></h1>
+      <h4>code: 2737</h4>
+    </div>
+    <div id="eshwar">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="https://sece.ac.in/">Sri Eshwar College of Engineering</a></h1>
+      <h4>code: 2739</h4>
+    </div>
+     
+    <div id="ait">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="http://www.adithyatech.edu.in/">adithya institute of technology</a></h1>
+      <h4 >code: 2744</h4>
+    </div>
+    <div id="kathir">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="http://www.kathir.ac.in/">Kathir College of Engineering</a>
+    </h1>
+      <h4 >code: 2745</h4>
+    </div>
+    
+    <div id="ktvr">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="https://www.myklassroom.com/Engineering-colleges-tamilnadu-details/287/2746/KTVR-knowledge-Park-for-Engineering-and-Technology">K.T.V.R. Knowledge Park for Engineering and Technology</a>
+    </h1>
+      <h4 >code: 2746</h4>
+    </div>
+     <div id="easa">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="http://easacollege.com/">EASA College of Engineering and Technology</a></h1>
+      <h4>code: 2749</h4>
+    </div>
+    <div id="kalaignar">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="hhttps://kitcbe.com/">Kalaignar Karunanidhi Institute of Technology</a>
+    </h1>
+      <h4 >code: 2750</h4>
+    </div>
+     <div id="kgisl">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="https://www.kgkite.ac.in/">K.G.I.S.L. Institute of Technology</a></h1>
+      <h4 >code: 2751</h4>
+    </div>
+    <div id="ppg">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase" ><a href="http://www.ppg.edu.in/engg/index.php">P.P.G. Institute of Technology</a></h1>
+      <h4>code: 2753</h4>
+    </div>
+   <div id="jan">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="http://www.jit.ac.in/">Jansons Institute of Engineering and Technology</a></h1>
+      <h4 >code: 2762</h4>
+    </div>
+    <div id="ace">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="http://www.acetcbe.edu.in/">akshaya college of engineering and technology</a></h1>
+      <h4 >code: 2763</h4>
+    </div>
+    <div id="kpr">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-600  uppercase"><a href="https://www.kpriet.ac.in/">K.P.R. Institute of Engineering and Technology</a>
+    </h1>
+      <h4 >code: 2764</h4>
+    </div>
+    <div id="park">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-red-200 uppercase" ><a href="http://pct.ac.in/">Park College of Technology</a></h1>
+      <h4>code: 2768</h4>
+    </div>
+   
+    <div id="cms">
+      <h1 class="text-3xl font-bold mt-5 mb-2 text-red-200 uppercase" ><a href="https://www.cmscet.com/">c.m.s. college of engineering and technology</a></h1>
+      <h4>code: 2772</h4>
+    </div>
+
+   
+    
+    
+    
+    
+
+    
+
+
+
+
+
+  
+
+
+
+
+
+
+    
+     
+    
+   
+    
+   
+   
+   
+
+
+
+	</div>
+    <script src="script1.js"></script>
+  </body>
+</html>

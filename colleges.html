@@ -1,122 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    .centre {
-        margin: auto;
-        width: 50%;
-        text-align: center;
-        border: 2px solid rgb(44, 0, 44);
-        padding: 10px;
-      }
-      .topclg{
-        width:1000px;
-		height:500px;
-        display: block;
-         margin-left: auto;
-        margin-right: auto;
-      }
-.gallery {
-  margin: 5px;
-  padding: 65px;
-  background-color: rgb(223, 70, 0);
-  border: 5px solid #ccc;
-  float: center;
-  
-}
-
-.gallery:hover {
-  border: 5px solid #777;
-}
-
-.gallery img {
-  width: 500px;
-  height: 400px;
-}
-
-div.desc {
-  
-  text-align: center;
-  padding: 25px;
-  font-family:arial,sans-serif,berlin sans fb;
-  font-size:32px;
-  font-weight:bold;
-  background-color: orange;
-}
-</style>
-</head>
-<body style="background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);"> 
-    <h1 class="centre">TOP COLLEGES IN INDIA</h1>
-    <br>
-    <br>
-   
-                            <img class="topclg" src="https://images.financialexpress.com/2018/04/top-college.jpg" alt="">
-                            <br><br><br><br><br>
-                             <table style="text-align:center;">
-                                <tr>
-                                <td class="gallery">
-                                  <a target="_blank" href="medicalcolleges.html">
-                                    <img src="https://ak.picdn.net/shutterstock/videos/1030152467/thumb/8.jpg" alt="" >
-                                  </a>
-                                  <div class="desc">TOP MEDICAL COLLEGES</div>
-                                </td>
-                                
-                                <td class="gallery">
-                                  <a target="_blank" href="engg.html">
-                                    <img src="img\works\Engineering.png" alt="" >
-                                  </a>
-                                  <div class="desc">TOP ENGINEERING COLLEGES</div>
-                                </td>
-                                </tr>
-                                <tr>
-                                <td class="gallery">
-                                  <a target="_blank" href="artscolleges.html">
-                                    <img src="https://miro.medium.com/max/3840/1*fh4r_ASaUKXyLU0_1BlQHw.jpeg" alt="" >
-                                  </a>
-                                  <div class="desc">TOP ARTS COLLEGES</div>
-                                </td>
-                                
-                                <td class="gallery">
-                                  <a target="_blank" href="lawcolleges.html">
-                                    <img src="https://i.ytimg.com/vi/z66KzNiRqXM/sddefault.jpg" alt="" >
-                                  </a>
-                                  <div class="desc">TOP LAW COLLEGES</div>
-                                </td>
-                                </tr>
-                                <tr>
-                                <td class="gallery">
-                                  <a target="_blank" href="polycolleges.html">
-                                    <img src="https://theglobalscholars.com/wp-content/uploads/2018/09/diploma-vs-degree-1.jpg" alt="" >
-                                  </a>
-                                  <div class="desc">TOP POLYTECHNIC COLLEGES</div>
-                                </td>
-                                
-                                <td class="gallery">
-                                  <a target="_blank" href="managementcolleges.html">
-                                    <img src="https://leverageedu.com/blog/wp-content/uploads/2020/05/Best-MBA-Colleges-in-World.jpg" alt="" >
-                                  </a>
-                                  <div class="desc">TOP MANAGEMENT COLLEGES</div>
-                                </td>
-                                </tr>
-                                <tr>
-                                <td class="gallery">
-                                  <a target="_blank" href="ftcolleges.html">
-                                    <img src="https://youthincmag.com/wp-content/uploads/2019/07/fashion-designing-Pinterest.jpg" alt="" >
-                                  </a>
-                                  <div class="desc">TOP FASHION TECHNOLOGY COLLEGES</div>
-                                </td>
-                                
-                                <td class="gallery">
-                                  <a target="_blank" href="healthsciencecolleges.html">
-                                    <img src="https://www.bestdegreeprograms.org/wp-content/uploads/2020/05/shutterstock_1395147236.jpg" alt="" >
-                                  </a>
-                                  <div class="desc">TOP HEALTH SCIENCE COLLEGES</div>
-                                </td>
-                                </tr>
-                                </table>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colleges</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);"
+  >
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border border-b-2 border-gray-400">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <span class="ml-3 text-xl">EUPHEUS</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a href="Home.html" class="mr-5 hover:text-gray-900">HOME</a>
+        <a href="courses.html" class="mr-5 hover:text-gray-900">Courses</a>
+        <a href="colleges.html" class="mr-5 hover:text-gray-900">Colleges</a>
+        <a  href="findcollege.html" class="mr-5 hover:text-gray-900">Cut-off</a>
+        <a  href="onlinecourses.html"class="mr-5 hover:text-gray-900">Online courses</a>
+        <a href="https://www.ncs.gov.in/Pages/default.aspx" class="mr-5 hover:text-gray-900">Job Portal</a>
+        <a href="additionalinfo.html" class="mr-5 hover:text-gray-900">Additional Information</a>
+        <a href="scholarship.html" class="mr-5 hover:text-gray-900">Scholarships</a>
+        <a href="abroadstudies.html" class="mr-5 hover:text-gray-900">Overseas</a>
+        <a href="queries.html" class="mr-5 hover:text-gray-900">Queries</a>
+        
+      </nav>
+    </div>
+  </header>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+            >
+              TOP COLLEGES IN INDIA
+            </h1>
+            <div class="h-1 w-20 bg-blue-500 rounded"></div>
+          </div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-700">
+            The decision to attend a college or university and admission to an
+            institution of higher education has important outcomes for
+            individuals and for society.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://ak.picdn.net/shutterstock/videos/1030152467/thumb/8.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-blue-500 text-xs font-medium title-font"
+              >
+                MEDICAL
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Top Medical Colleges
+              </h2>
+              <p class="leading-relaxed text-base">
+                A medical degree is a vocational or technical degree awarded for studies in fields associated with medicine and/or surgery.
+              </p>
+              <a href="medicalcolleges.html" class="text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="img\works\Engineering.png"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-blue-500 text-xs font-medium title-font"
+              >
+                ENGINEERING
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Top Engineering Colleges
+              </h2>
+              <p class="leading-relaxed text-base">
+                Engineering concerns the research, design, and use of machines,
+                engines, and structures. Engineering impacts every part of
+                modern life.
+              </p>
+              <a href="engg.html" class="text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://miro.medium.com/max/3840/1*fh4r_ASaUKXyLU0_1BlQHw.jpeg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-blue-500 text-xs font-medium title-font"
+              >
+                ARTS & SCIENCE
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Top Arts & Science Colleges
+              </h2>
+              <p class="leading-relaxed text-base">
+                A College of Arts and Sciences is most commonly a unit within a
+                university which focuses on instruction of the liberal arts and
+                pure sciences.
+              </p>
+              <a href="artscolleges.html" class="text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://i.ytimg.com/vi/z66KzNiRqXM/sddefault.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-blue-500 text-xs font-medium title-font"
+              >
+                LAW
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Top Law Colleges
+              </h2>
+              <p class="leading-relaxed text-base">
+                Law Courses are for students who wish to study judiciary and
+                law. These will help the students to develop skills like
+                judgment and problem-solving ability.
+              </p>
+              <a href="lawcolleges.html" class="text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://theglobalscholars.com/wp-content/uploads/2018/09/diploma-vs-degree-1.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-blue-500 text-xs font-medium title-font"
+              >
+                POLYTECHNIC
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Top Polytechnic Colleges
+              </h2>
+              <p class="leading-relaxed text-base">
+                Polytechnic is a professional course which provides practical
+                knowledge in the field of Technical Education rather than
+                theoretical.
+              </p>
+              <a href="polycolleges.html" class="text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://leverageedu.com/blog/wp-content/uploads/2020/05/Best-MBA-Colleges-in-World.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-blue-500 text-xs font-medium title-font"
+              >
+                MANAGEMENT
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Top Management Colleges
+              </h2>
+              <p class="leading-relaxed text-base">
+                Management degrees give students a broad foundation in topics
+                relating to business, finance, economics and marketing.
+              </p>
+              <a href="managementcolleges.html" class="text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://youthincmag.com/wp-content/uploads/2019/07/fashion-designing-Pinterest.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-blue-500 text-xs font-medium title-font"
+              >
+                FASHION TECHNOLOGY
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Top Fashion Technology Colleges
+              </h2>
+              <p class="leading-relaxed text-base">
+                Fashion technology is mainly concerned with the art of crafting
+                cloth materials that are both, pleasing to the eyes and
+                attractive to wear.
+              </p>
+              <a href="ftcolleges.html" class="text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://www.bestdegreeprograms.org/wp-content/uploads/2020/05/shutterstock_1395147236.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-blue-500 text-xs font-medium title-font"
+              >
+                HEALTH SCIENCE
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Top Health Science Colleges
+              </h2>
+              <p class="leading-relaxed text-base">
+                Health Sciences degrees prepare professionals who can apply
+                medical knowledge to provide and improve patient healthcare.
+              </p>
+              <a href="healthsciencecolleges.html" class="text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

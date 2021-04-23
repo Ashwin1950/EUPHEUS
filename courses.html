@@ -20,6 +20,13 @@ gallery {
   float: left;
   width: 180px;
 }
+.additionals{
+	color:red;
+	text-decoration: none;
+}
+.additionals:hover{
+	color: coral;
+}
 
 gallery:hover {
   border: 15px solid #777;
@@ -40,6 +47,97 @@ tr,td{
 	border-collapse: collapse;
     border: 25px solid aqua;
 }
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.cont {
+  position: relative;
+}
+.mySlides {
+  display: none;
+ text-align: center;
+ 
+}
+.picturesize{
+	height: 200px;
+	width: 100px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 	</style>
 <!-- css -->
 <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -50,7 +148,7 @@ tr,td{
 <link href="css/style.css" rel="stylesheet" />
  
 </head>
-<body style="background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);"></body>
+<body style="background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);"></body>
 <div id="wrapper" class="home-page">
 	<!-- start header -->
 	<header>
@@ -93,38 +191,85 @@ tr,td{
 		<br>
 		<br>
 	</div>
-<table>
-<tr>
-	<td class="gallery">
-		<a href="ten.html">
-		  <img style="border-radius: 25px;" src="img\works\af10.png" alt="" width="600" height="400">
-		</a>
-		<div class="desc">WHAT AFTER 10th ?</div>
-	</td>
-	  
-	  <td class="gallery">
-		<a href="twelve.html">
-		  <img style="border-radius: 25px;" src="img\works\12th.jpg" alt="" width="600" height="400">
-		</a>
-		<div class="desc">WHAT AFTER 12th ?</div>
-	</td>
-</tr>
-<tr>
-	  <td class="gallery">
-		<a href="aftrug.html">
-		  <img style="border-radius: 25px;" src="img\works\afterug.png" alt="" width="600" height="400">
-		</a>
-		<div class="desc">WHAT AFTER UNDER GRADUATION?</div>
-	</td>
-	  
-	  <td class="gallery">
-		<a href="pg.html">
-		  <img style="border-radius: 25px;" src="img\works\pg.png" alt="" width="600" height="400">
-		</a>
-		<div class="desc">POST-GRADUATION</div>
-	</td>
-</tr>
-</table>
+	<ul>
+	<li>
+
+<h2 style="text-align:center">WHAT NEXT?!</h2>
+
+<div class="cont">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <a class="picturesize" href="ten.html"><img src="img\works\af10.png" style="width:1000px"></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <a class="picturesize" href="twelve.html"><img src="img\works\12th.jpg" style="width:1000px;height: 600px;"></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <a  class="picturesize" href="aftrug.html"><img src="img\works\afterug.png" style="width:1000px"></a>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <a  class="picturesize" href="pg.html"><img src="img\works\pg.png" style="width:1000px;height: 600px;"></a>
+  </div>
+    
+  <a style="text-decoration: none;" class="prev" onclick="plusSlides(-1)">❮</a>
+  <a style="text-decoration: none;" class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img\works\af10.png" style="width:100%;height:200px;" onclick="currentSlide(1)" alt="WHAT AFTER 10th ?">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img\works\12th.jpg" style="width:100%;height:200px;" onclick="currentSlide(2)" alt="WHAT AFTER 12th ?">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img\works\afterug.png" style="width:100%;height:200px;" onclick="currentSlide(3)" alt="WHAT AFTER UNDER GRADUATION?">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img\works\pg.png" style="width:100%;height:200px;" onclick="currentSlide(4)" alt="POST GRADUATION">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 	
 
 	<footer>
@@ -198,6 +343,7 @@ tr,td{
 	</div>
 	</footer>
 </div>
+
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 
 <script src="js/jquery.js"></script>

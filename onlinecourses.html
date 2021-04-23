@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Find College</title>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="enggcollege.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/jcarousel.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" />
+    
+
+
+<style>
+.select{
+    font-size: large;
+
+}
+#ba,#bcom,#be,#bsc{
+    color: black;
+}
+.heading{
+    color: black;
+}
+.text{
+    text-align:center;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+    color: black;
+  border: 1px solid #020202;
+  text-align: left;
+  padding: 8px;
+
+}
+    </style>
+
+
+
+
+
+  </head>
+  <body style="background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);">
+    
+  <div class="container">
+      <div class="heading">
+     <br><br> <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ONLINE COURSES FOR COLLEGE STUDENTS</h1><br>
+      <p >&nbsp;&nbsp;&nbsp;&nbsp;In the last 20 years, the Internet has grown from being nearly non-existent into the largest, most accessible database of information ever created. It has changed the way people communicate, shop, socialise, do business and think about knowledge and learning. Much more than just a new twist on distance learning, online schooling is changing the face of traditional classrooms and making education more accessible than ever before.</p>
+        <p >&nbsp;&nbsp;&nbsp;&nbsp; Online education is a form of education where students use their home computers through the internet. For many nontraditional students, among them all those who want to continue working full time or raising families, online graduations and courses have become popular in the past decade. Often online graduation and course programmes, some of which are conducted using digital technologies, are provided via the online learning portal of the host university.</p>
+        <p class="text" ><b>Some online course sites are</b></p> 
+        <ul class="text">
+        <li><a href="https://www.coursera.org/"> Coursera</a></li>
+            <li><a href="https://www.google.com/aclk?sa=l&ai=DChcSEwiWu_zMjP3vAhXDfCsKHfeyBa8YABAAGgJzZg&ae=2&sig=AOD64_1NPJ36R3ii52B2DfY8uySgg9X8rw&q&adurl&ved=2ahUKEwjc9PbMjP3vAhVm63MBHQzID54Q0Qx6BAgIEAE">Udemy</a></li>
+            <li><a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjY9rTXjP3vAhXBBHIKHVawAzoYABABGgJzZg&ae=2&sig=AOD64_2sjfl4vvrOTEl5cHoC7gxZlvoiOA&q&adurl&ved=2ahUKEwjp1KzXjP3vAhX2_XMBHf4rBZ8Q0Qx6BAgGEAE">Edureka</a></li>
+            <li><a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjqnqfujP3vAhWyg0sFHemJAT8YABAAGgJzZg&ae=2&sig=AOD64_1UZv7-7toSJNWrVsuN-PwBxLwL_w&q&adurl&ved=2ahUKEwiQhaHujP3vAhWa7HMBHdjtBLIQ0Qx6BAgDEAE">OERu</a></li>
+            <li><a href="https://www.edx.org/?source=aw&awc=6798_1618381620_c08b0ced8e979b184f19332035834d1b&utm_source=aw&utm_medium=affiliate_partner&utm_content=text-link&utm_term=328967_The+Good+Trade">edX</a></li>
+            <li><a href="https://www.masterclass.com/?utm_source=Paid&utm_medium=Affiliate&utm_term=Aq-Prospecting&sscid=41k5_cxwwq">Masterclass</a></li>
+            <li><a href="https://alison.com/?irclickid=U482IeRP5xyLR5NwUx0Mo3QsUkESeEVVOQQJxw0&irgwc=1&partner_type_id=&utm_campaign=ONLINE_TRACKING_LINK&utm_content=&utm_medium=The%20Good%20Trade%E2%80%8A&utm_source=IR">Alison</a></li>
+            <li><a href="https://www.udacity.com/?irclickid=yZRzCgRcMxyLWE4wUx0Mo3QDUkESeB0JOQQJxw0&irgwc=1&utm_source=affiliate&utm_medium=&aff=274622&utm_term=&utm_campaign=__&utm_content=&adid=786224">Udacity</a></li>
+        </ul>
+    </div>   
+        <div class="ml-5">
+             <br>
+            <div class="select">
+               
+                <label for="online"class="select">SELECT A COURSE:</label>
+                <select name="onlinecourse" id="onlinecourses" onclick="time()" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                        
+                <option value="select" id="select">select</option> 
+                <option value="ba" id="ba">B.A</option>
+                <option value="bcom" id="bcom">B.COM</option>
+                <option value="be" id="be">B.E</option>
+                <option value="bsc" id="bsc">B.Sc</option>
+                </select>
+                <br><br>
+            </div>
+      
+
+  </div>
+ 
+    <!-- <div class="inline-block relative w-64 ml-3 mt-5">
+      <input type="number" id="mark">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded  mt-5" onclick="time()">Submit</button>
+    </div> -->
+<div id="baa">
+  <table>      
+  <div>
+        <tr><td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.udemy.com/topic/graphic-design/?utm_source=adwords&utm_medium=udemyads&utm_campaign=GraphicDesign_v.PROF_la.EN_cc.INDIA_ti.6020&utm_content=deal4584&utm_term=_._ag_82381201178_._ad_456452414042_._kw_online%20graphic%20designing%20course_._de_c_._dm__._pl__._ti_kwd-989581384_._li_1007810_._pd__._&matchtype=p&gclid=Cj0KCQjw38-DBhDpARIsADJ3kjnG_bWcqR_7bz6r8r6n_ogGGXFen5DUuXDjkQP9OOeayGqorY6AHsgaAnkwEALw_wcB">graphic designing</a></h1>
+        </td>
+      </div>
+      <div>
+        <td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.udemy.com/course/photography-masterclass-complete-guide-to-photography/?gclid=Cj0KCQjwgtWDBhDZARIsADEKwgO7xuhiZh2YlRojz-tWJPOGgr2ghvekGNAp66unlnKcUEU4by0br3AaAmQpEALw_wcB&matchtype=b&utm_campaign=Photography_v.NONP_la.EN_cc.INDIA_ti.7166&utm_content=deal4584&utm_medium=udemyads&utm_source=adwords&utm_term=_._ag_81264946065_._ad_394104276908_._kw_%2Bphotography+%2Bcourses_._de_c_._dm__._pl__._ti_kwd-298526840623_._li_1007810_._pd__._">photography</a></h1>
+        </td></tr>
+      </div>
+      <div>
+        <tr><td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.edureka.co/big-data-hadoop-training-certification?utm_source=Google-Search&utm_medium=cpc&utm_campagin=ET-IND-003-Search-Hadoop&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgNm6ToNFyzd5tZfVANUFb2r5Wx1FGamScKDLElkaWSyg_w0UQivHowaAvgBEALw_wcB">big data analysis</a></h1>
+        </td>
+      </div>
+      <div>
+        <td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.mbacentral.org/free-online-mba-courses/">online mba</a></h1>
+        </td></tr>
+      </div>
+      <div>
+        <tr><td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.writersbureau.com/index.php?source=ppc&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgM3D-G4lJCtEtP4U4U60T5c3vK8cBlQ_vYshrXrT4uO2g7wSWzTiw0aArSHEALw_wcB">creative writing</a></h1>
+        </td>
+      </div>
+      <div>
+        <td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://ibuildapp.com/">app development</a></h1>
+        </td></tr>
+      </div>
+      <div>
+        <tr><td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.udemy.com/course/the-art-of-film/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_118445032537_._ad_513184899274_._kw__._de_c_._dm__._pl__._ti_dsa-1212271230479_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgO74XLOc2R0wY8j2ltzvHyJLRZNE7jHcXWAOLZEW-3PguFM2JX8i00aAkt1EALw_wcB">film making</a></h1>
+        </td>
+      </div>
+      <div>
+        <td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.udemy.com/course/certification-course-in-human-resource-management/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_82569850245_._ad_437477497173_._kw__._de_c_._dm__._pl__._ti_dsa-485138040906_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgP6O-mt5ccoJTvzPSEUV4hQH9CKgBs62DL7EHTqVW07uoWn1LFVMjUaAtbWEALw_wcB">human resource management</a></h1>
+        </td></tr>
+      </div>
+      <div>
+        <tr><td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.udemy.com/course/social-media-marketing-ads/?gclid=Cj0KCQjwgtWDBhDZARIsADEKwgNytskGjX9jCy2xnUGW8xejqa6JUHvS_HZ-Hrv_9M7tUE9vY9xFAa8aAln6EALw_wcB&matchtype=e&utm_campaign=LongTail_la.EN_cc.INDIA&utm_content=deal4584&utm_medium=udemyads&utm_source=adwords&utm_term=_._ag_82876580287_._ad_387389290725_._kw_social+media+marketing+course_._de_c_._dm__._pl__._ti_kwd-312800103279_._li_1007810_._pd__._">social media marketing</a></h1>
+        </td>
+      </div>
+
+      <div>
+        <td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://code.whitehatjr.com/coding/trial/register?utm_source=Google_IND_SearchNB&utm_content=Coding_Broad&utm_campaign=IND_SOK_ACQ_Whitehat_Search_NonBrand_Registered_Generic_Coding&utm_medium=103614752782&utm_term=461903277746&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgOaZuyl4Uxvdit5zlImmfzIyWsTiIbONj81bVZEDqTCK_p8nG47ee0aAln0EALw_wcB">programming</a></h1>
+        </td></tr>
+      </div>
+      </table><br><br><br><br>
+</div>
+
+
+<div  id="bcomo">
+  <table>
+    <div>
+      <tr><td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000">Intro to Programming - Learn to Code for only 10 hours/week</a></h1>
+        </td>
+      </div>
+
+      <div>
+        <td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.edx.org/course/corporate-renewable-procurement-opportunities-in-i">Corporate Renewable Procurement: Opportunities in India</a></h1>
+        </td></tr>
+      </div>
+
+      <div>
+        <tr><td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.classcentral.com/course/swayam-tourism-resources-of-india-14341">Tourism Resources of India</a></h1>
+        </td>
+      </div>
+      <div>
+        <td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.coursera.org/learn/accounting-finance">
+            Indian School of Business Accounting and Finance for IT professionals</a></h1>
+          </td></tr>
+      </div>
+      <div>
+        <tr><td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.udemy.com/course/capitalmarkets/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_118445032497_._ad_513184899271_._kw__._de_c_._dm__._pl__._ti_dsa-1212271230639_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgPbnqi5MkOt8GKWCyAKbZTpRQRR6n_g-sqPkYgaa9W0Us9H3GLi6L8aAq02EALw_wcB">Introduction to Financial Markets</a></h1>
+        </td>
+      </div>
+      <td>
+      <div>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.udemy.com/course/algorithmic-trading-quantitative-analysis-using-python/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_118445032497_._ad_513184899271_._kw__._de_c_._dm__._pl__._ti_dsa-1212271230639_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgPAstAjvsj5Vr-iIlyMGSzvzIMVD_cbh1ntlRr-iOL32l0uFY2ePdQaArCaEALw_wcB">   Trading Algorithms</a></h1>
+        </td></tr>
+      </div>
+      <div>
+        <tr><td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.udemy.com/course/stock-market-basics-full-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=StockTrading_v.PROF_la.EN_cc.INDIA_ti.7900&utm_content=deal4584&utm_term=_._ag_81684910262_._ad_437511391567_._kw__._de_c_._dm__._pl__._ti_dsa-774930039769_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgPNf0Pe6bVzCyI4yf9-KhXYLbE_Rg2XyZ2uCUj-QGU63j8t4hd34VoaAmLnEALw_wcB"> Trading basics</a></h1>
+        </td>
+      </div>
+      <div>
+        <td>
+        <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+          <a href="https://www.simplilearn.com/project-management/pmp-certification-training?utm_source=google&utm_medium=cpc&utm_term=&utm_content=1435836152-73882961181-485173501413&utm_device=c&utm_campaign=Search-DigitalOperationsCluster-PM-PMP-IN-Main-AllDevice-adgroup-DSA-ProjectManagement-PMP&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgMnsWY8wA8GENilIjmEAgHUcFb8RxUPU3F9K22f-lVNvFc-SsqnuJkaAl0SEALw_wcB"> IT Project management</a></h1>
+        </td></tr>
+      </div>                                                                                                                                                                                      
+    </table><br><br><br>
+
+</div>
+<div  id="beo">
+  <table>
+<div>
+  <tr><td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.simplilearn.com/cloud-computing/aws-solution-architect-associate-training?utm_source=google&utm_medium=cpc&utm_term=&utm_content=1629430732-77899329513-372395013537&utm_device=c&utm_campaign=Search-TechCluster-Cloud-AWSNew-IN-Main-AllDevice-adgroup-DSA-Cloud-AWS&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgOUpcYQNYtvh7V8ZTTWfh2JvUDK4ca3uLTLiJ-KAVJPhGWMEgtLC4IaAubvEALw_wcB">
+            Aws certification</a></h1>
+            </td>
+</div>
+<div>
+<td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.udemy.com/topic/ethical-hacking/free/">
+            Ethical hacking</a></h1>
+          </td></tr>
+</div>
+<div>
+  <tr><td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.simplilearn.com/sem-landing/course/course_id/670/template/2?utm_source=google&utm_medium=cpc&utm_term=%2Baws%20%2Bcertified&utm_content=1629430732-60611396845-328204947522&utm_device=c&utm_campaign=Search-TechCluster-Cloud-AWSNew-IN-Main-AllDevice-adgroup-AWS-Certification-BMM&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgOp7lMQEGPkMfWvVeIAGUM3EqNgFYMW40Mi51WhZJL8tDYNABUymSsaAnjDEALw_wcB">
+            Aws certification cloud partioner</a></h1>
+          </td>
+</div>
+<div>
+  <td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.edureka.co/aws-certification-training?utm_source=Google-Search&utm_medium=cpc&utm_campaign=ET-IND-006-Search-AWS&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgMz4l6b0pr8W11KmLjcN9-EoKZdvvqqWS-KBVhFIKD9JN6gonVJkcAaAt8mEALw_wcB">
+            amazon aws</a></h1>
+          </td></tr>
+</div>
+<div>
+  <tr><td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.opswat.com/academy?utm_campaign=PaidSearch_2H20_APAC_Academy_Google_Academy(Solution)_082020&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgMG9dt1GcqqJIzzbu3oIkGQHqYFQRFYHcd_rdSUy2Sw40s9CZZ6gF4aAkCpEALw_wcB">
+            Cyber security</a></h1>
+          </td>
+</div>
+<div>
+  <td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.udemy.com/course/new-ccna-full-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=CiscoCCNA_v.PROF_la.EN_cc.INDIA_ti.5044&utm_content=deal4584&utm_term=_._ag_86821112529_._ad_437511326587_._kw__._de_c_._dm__._pl__._ti_dsa-774930029889_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgPJdIBp3cHdbnA3MPNE_vJKiNUDGhQ74Znx_6TuyocMfvhF6lRbK5waAqkDEALw_wcB">
+            Cisco ccna</a></h1>
+        </td></tr>
+</div>
+<div>
+  <tr><td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.udemy.com/topic/comptia-a/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Branded-Topic_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_79702256323_._ad_390484748306_._kw_udemy%20comptia%20a%2B_._de_c_._dm__._pl__._ti_kwd-411853069567_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgMOvhxGn9MJ06uZ4-4dK6DFhW89Rru49Xwiw-WN1OJOJerLhI2IemIaAkK2EALw_wcB">
+            Comptia security</a></h1>
+            </td>
+</div>
+<div>
+  <td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://intellipaat.com/microsoft-azure-training/?utm_source=google&utm_medium=search&utm_term=microsoft%20azure%20online%20courses&utm_campaign=s_azure_in_state&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgO6U-BPcS1AB42MXLipBPhEjksCs3Sg0imVABHZXkA3H2gCs85fxjwaAlfqEALw_wcB">
+            Microsoft azure</a></h1>
+          </td></tr>
+</div>
+</table><br><br><br>
+</div>
+  <div  id="bsco">
+<div>
+  <tr><td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.simplilearn.com/advanced-digital-marketing-certification-training-course?&utm_source=google&utm_medium=cpc&utm_term=%2Bdigital%20%2Bmarketing%20%2Bonline%20%2Bcourse&utm_content=1679614554-66018000475-382384523677&utm_device=c&utm_campaign=Search-DigitalBusinessCluster-DM-IN-Main-AllDevice-adgroup-DM-DMS-Course-Broad&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgOupeRCtRgH2VbX2UcPkYq7JAF6-jNOx4u25e4PeddvtHBeGlsEfusaAqaQEALw_wcB">Fundamental marketing</a></h1>
+
+      </td>      </div>
+  
+<div>
+  <td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.udemy.com/courses/marketing/content-marketing/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_82569850245_._ad_437477497173_._kw__._de_c_._dm__._pl__._ti_dsa-40209827789_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgP-Lx0YkZMbcTN4qndG7UkclVpqe8GbL-oAOkjLbzfnqy1vVVK9JhYaAk8LEALw_wcB">Content marketing</a></h1>
+      </td></tr>
+      </div>
+
+<div>
+<tr><td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.udemy.com/course/email-marketing-campaigns-a-complete-guide/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DigitalMarketing_v.PROF_la.EN_cc.INDIA_ti.5430&utm_content=deal4584&utm_term=_._ag_81684921502_._ad_437477560494_._kw__._de_c_._dm__._pl__._ti_dsa-774930033009_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgNeQaYT3cSJKXKXYxCYgAcpxDqE_1Rb2a-QMHsCFk1Mzm8SiInRCoEaAvR6EALw_wcB">Email marketing</a></h1>
+      </td>
+      </div>
+<div>
+<td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.udemy.com/course/learn-google-adwords/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_82569850245_._ad_437477497173_._kw__._de_c_._dm__._pl__._ti_dsa-43377404311_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgP9Q6fVOQnJBmogDH5cKDtADOGRBB2zQF92VuDl7g4vrpJFOhQ4rKMaAuaDEALw_wcB">Search Engine Marketing</a></h1>
+      </td></tr>
+      </div>
+<div>
+  <tr><td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.coursera.org/courses?query=sales&page=1">sales</a></h1>
+      </td>
+</div>
+<div>
+  <td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.udemy.com/course/ecommerce-marketing-strategy-masterclass-2020/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DigitalMarketing_v.PROF_la.EN_cc.INDIA_ti.5430&utm_content=deal4584&utm_term=_._ag_81684921502_._ad_437477560494_._kw__._de_c_._dm__._pl__._ti_dsa-774930033009_._li_1007810_._pd__._&matchtype=b&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgPbaZbYE-KXRs7EI247iO5U8Q8-ZntvKLrPTKU2NUlWgneOZcihQZEaAqFxEALw_wcB">e-commerce</a></h1>
+        </td></tr>
+      </div>
+
+<div>
+  <tr><td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.coursera.org/courses?query=e-commerce&page=1">coding and development courses</a></h1>
+      </td>
+      </div>
+
+<div>
+  <td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.coursera.org/browse/personal-development">Personal and professional development courses</a></h1>
+      </td></tr>
+      </div>
+
+<div>
+  <tr><td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.domestika.org/en/courses/popular?gclid=Cj0KCQjwgtWDBhDZARIsADEKwgOa87JcTGB_KSpjEi8HoP7Nxya1e4RcMXm4sEmybzprb9Wer0nF2QEaAgyyEALw_wcB">design</a></h1>
+      </td>
+      </div>
+<div>
+  <td>
+    <h1 class="text-3xl font-bold mt-5 mb-2 text-yellow-500 uppercase" >
+        <a href="https://www.coursera.org/courses?query=business%20finance">business and finance</a></h1>
+</div>
+</td></tr>
+
+
+</div>  
+	</div>
+    <script src="script2.js"></script>
+  </body>
+</html>

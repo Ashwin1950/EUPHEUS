@@ -25,7 +25,25 @@
         //sign in with firebase auth
         auth.signInWithEmailAndPassword(email, password).then(user =>{
             alert("Login Successful :)");
-            var link = 'Home.html';
+            var link = 'home.html';
+            window.location.replace(link);
+           
+        }).catch(err => {
+            alert(err.message);
+        });
+        
+    });
+    
+    btnadmin.addEventListener('click', e => {
+        const email = adminemail.value;
+        const password = adminpassword.value;
+
+        const auth = firebase.auth();
+
+        //sign in with firebase auth
+        auth.signInWithEmailAndPassword(adminemail, adminpassword).then(user =>{
+            alert("Login Successful :)");
+            var link = 'admin.html';
             window.location.assign(link);
            
         }).catch(err => {
@@ -33,6 +51,7 @@
         });
         
     });
+    
 
     //Add Signup Event
     btnSignup.addEventListener('click', e => {
@@ -45,7 +64,7 @@
 
         //sign in with firebase auth
         const promise = auth.createUserWithEmailAndPassword(email, password).then(user => {
-            alert("Signup Successful :)")
+            alert("Signup Successful :)");
             
         }).catch(err => {
             alert(err.message);
